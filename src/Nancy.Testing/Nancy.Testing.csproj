@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\HtmlAgilityPlus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -38,22 +46,37 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\..\dependencies\xunit\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\..\dependencies\xunit\xunit.extensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="AndConnector.cs" />
     <Compile Include="Browser.cs" />
     <Compile Include="BrowserContext.cs" />
     <Compile Include="BrowserContextExtensions.cs" />
     <Compile Include="BrowserContextMultipartFormData.cs" />
+    <Compile Include="ContextExtensions.cs" />
+    <Compile Include="DocumentWrapper.cs" />
     <Compile Include="IBrowserContextValues.cs" />
+    <Compile Include="QueryWrapper.cs" />
+    <Compile Include="TestExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nancy\Nancy.csproj">
       <Project>{34576216-0DCA-4B0F-A0DC-9075E75A676F}</Project>
       <Name>Nancy</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Binaries\HtmlAgilityPack.dll" />
+    <Content Include="Binaries\HtmlAgilityPlus.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
