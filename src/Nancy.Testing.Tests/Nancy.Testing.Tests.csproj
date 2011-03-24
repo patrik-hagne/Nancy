@@ -65,6 +65,7 @@
     <Compile Include="BrowserFixture.cs" />
     <Compile Include="ContextExtensionsTests.cs" />
     <Compile Include="DocumentWrapperTests.cs" />
+    <Compile Include="PathHelperTests.cs" />
     <Compile Include="QueryWrapperTests.cs" />
     <Compile Include="TestExtensionsTests.cs" />
   </ItemGroup>

@@ -64,9 +64,11 @@
     <Compile Include="BrowserContextMultipartFormData.cs" />
     <Compile Include="ContextExtensions.cs" />
     <Compile Include="DocumentWrapper.cs" />
+    <Compile Include="FakeRootPathProvider.cs" />
     <Compile Include="IBrowserContextValues.cs" />
     <Compile Include="IndexHelper.cs" />
     <Compile Include="NodeWrapper.cs" />
+    <Compile Include="PathHelper.cs" />
     <Compile Include="QueryWrapper.cs" />
     <Compile Include="TestExtensions.cs" />
   </ItemGroup>
