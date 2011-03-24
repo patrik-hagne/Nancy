@@ -62,6 +62,7 @@
     <Compile Include="BrowserContext.cs" />
     <Compile Include="BrowserContextExtensions.cs" />
     <Compile Include="BrowserContextMultipartFormData.cs" />
+    <Compile Include="BrowserResponse.cs" />
     <Compile Include="ContextExtensions.cs" />
     <Compile Include="DocumentWrapper.cs" />
     <Compile Include="FakeRootPathProvider.cs" />
