@@ -58,11 +58,13 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="AndConnector.cs" />
+    <Compile Include="AssertException.cs" />
     <Compile Include="Browser.cs" />
     <Compile Include="BrowserContext.cs" />
     <Compile Include="BrowserContextExtensions.cs" />
     <Compile Include="BrowserContextMultipartFormData.cs" />
     <Compile Include="BrowserResponse.cs" />
+    <Compile Include="BrowserResponseExtensions.cs" />
     <Compile Include="ContextExtensions.cs" />
     <Compile Include="DocumentWrapper.cs" />
     <Compile Include="FakeRootPathProvider.cs" />
