@@ -67,7 +67,7 @@
     <Compile Include="BrowserResponseExtensions.cs" />
     <Compile Include="ContextExtensions.cs" />
     <Compile Include="DocumentWrapper.cs" />
-    <Compile Include="FakeRootPathProvider.cs" />
+    <Compile Include="Fakes\FakeRootPathProvider.cs" />
     <Compile Include="Fakes\FakeNancyModule.cs" />
     <Compile Include="IBrowserContextValues.cs" />
     <Compile Include="IndexHelper.cs" />
