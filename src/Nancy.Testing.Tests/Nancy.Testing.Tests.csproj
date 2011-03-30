@@ -34,11 +34,13 @@
     <Reference Include="FakeItEasy">
       <HintPath>..\..\dependencies\fakeiteasy\FakeItEasy.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>..\Nancy.Testing\Binaries\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dependencies\htmlagilitypack\HtmlAgilityPack.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPlus">
-      <HintPath>..\Nancy.Testing\Binaries\HtmlAgilityPlus.dll</HintPath>
+    <Reference Include="HtmlAgilityPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dependencies\htmlagilitypack\HtmlAgilityPlus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,7 +69,7 @@
     <Compile Include="DocumentWrapperTests.cs" />
     <Compile Include="PathHelperTests.cs" />
     <Compile Include="QueryWrapperTests.cs" />
-    <Compile Include="TestExtensionsTests.cs" />
+    <Compile Include="AssertExtensionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nancy.Testing\Nancy.Testing.csproj">
